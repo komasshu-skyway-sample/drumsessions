@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="/javascripts/libs/jquery-2.0.3.min.js"></script>
+    <script src="/javascripts/libs/peer.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+  </head>
+  <body>
+    <p>
+    myid: <span id="myid"></span>
+    </p>
+    
+    <p>
+      <b>Loaded sample</b> : <span id="items"></span>
+      <br><button id="play">play sounds</button>
+    </p>
+    <p>
+    <b>Drum</b>
+    <div id="hit">
+      <button class="drum" name="snare"><img height="96px" src="/img/snare.jpg"></button>
+      <button class="drum" name="cymbal"><img height="96px" src="/img/cymbal.jpg"></button>
+      <button class="drum" name="kick"><img height="96px" src="/img/kick.jpg"></button>
+    </div>
+    </p>
+    <p>
+    <b>connected ids:</b>
+     <ul id="connectedids"></ul>
+    </p>
+    <p>
+    console:
+    <div id="console"></div>
+    </p>
+    <script src="/javascripts/drumsession.js"></script>
+  </body>
+</html>
